@@ -42,10 +42,10 @@ public class Cliente {
 	private String cpf;
 	@NotNull
 	private Boolean aceitaTermos;
-	
+
 	private LocalDateTime dataHoraDoCadastro;
 	private LocalDateTime dataHoraDaUltimaAlteração;
-	
+
 	public Cliente(@NotBlank String nomeCompleto, @NotBlank @Email String email, @NotBlank String celular,
 			String telefone, Sexo sexo, @NotNull LocalDate dataNascimento, @CPF String cpf, Boolean aceitaTermos) {
 		this.nomeCompleto = nomeCompleto;
@@ -58,8 +58,5 @@ public class Cliente {
 		this.aceitaTermos = aceitaTermos;
 		this.dataHoraDoCadastro = LocalDateTime.now();
 	}
-	
-    
-	
 
 }
