@@ -11,5 +11,5 @@ import br.com.petz.clientepet.cliente.application.api.ClienteResponse;
 public interface ClienteService {
 	ClienteResponse criaCliente(ClienteRequest clienteRequest);
 	List<ClienteListResponse> buscaTodosClientes();
-	ClienteDetalhadoResponse buscaClienteAtravesID(UUID idCliente);
+	ClienteDetalhadoResponse buscaClienteAtravesId(UUID idCliente);
 }
